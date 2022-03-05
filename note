@@ -1,0 +1,9 @@
+source .bash_profile
+trong các event như là onClick, v.v phải để 1 arrow function nếu không code sẽ tự chạy đến đó theo flow của chương trình
+components sẽ re render lại khi các prop và state của component thay đổi
+redux luôn re render component mỗi khi store được update
+trang product detail nên dùng map vì nếu không dùng map trong lần đầu fetch dữ liệu khi dữ liệu chưa được trở về chương trình sẽ bị lỗi và không được chạy tiếp.
+Nếu dùng map trong lần đầu sẽ trống và sau khi fetch được dữ liệu về redux store compoent sẽ được rerender
+https://loading.io/css/
+Components mỗi khi được mounted vào sẽ là 1 components khác, không phải component trước đó, nếu muốn thực hiện 1 hành động mỗi khi component được mount hãy dùng useEffect với dependencies là rỗng
+Dùng map lồng nhau cả 2 map phải có return mới có thể render ra giao diện
